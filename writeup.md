@@ -24,6 +24,10 @@ The goals / steps of this project are the following:
 [image11]: ./output_images/04_detection_heatmap02.png
 [image12]: ./output_images/04_detection_heatmap03.png
 [image13]: ./output_images/04_detection_heatmap04.png
+[image14]: ./output_images/05_vid_frame01.png
+[image15]: ./output_images/05_vid_frame02.png
+[image16]: ./output_images/05_vid_frame03.png
+[image17]: ./output_images/05_vid_frame04.png
 [video14]: ./project_video_output.mp4
 
 
@@ -182,10 +186,27 @@ The video code has been implemented in 8th (last) cell of my iPython notebook st
 
 ### Here are six frames, their corresponding thresholded heatmaps, and also their resulting bounding boxes drawn:
 
-Here you can see some ephemeral false-positives get eliminated as the frames progress forward.
+Here you can see some ephemeral false-positives get eliminated as the frames progress forward. 
 
-![alt text][image5]
+Intial Frame 1:
 
+Frame 1:
+![vid frame1][image14]
+
+Second Frame 2:
+
+Frame 2:
+![vid frame2][image15]
+
+We can see the false-positive here in Frame 3, but it does not appear in the final image (at the bottom-right) because it gets removed by heatmap summation thresholding.
+
+Frame 3:
+![vid frame3][image16]
+
+Finally, in frame 4, it false-positives do not appear again.
+
+Frame 4:
+![vid frame4][image17]
 
 
 
